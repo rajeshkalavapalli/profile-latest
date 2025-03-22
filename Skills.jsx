@@ -2,36 +2,30 @@ import React from 'react';
 
 function Skills() {
   return (
-    <section id="skills" className="bg-gray-900 text-white py-20">
+    <section id="skills" className="bg-[#fefefe] py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-6 text-center md:text-left">
-          My <span className="text-blue-500">Skills</span>
+        <h2 className="text-4xl font-bold mb-6 text-[#af1740] text-center md:text-left">
+          My <span className="text-[#117554]">Skills</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript, React, Node.js</p>
+          <div className="bg-[#f5f7f8] p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-[#522258]">Web Development</h3>
+            <p className="text-lg text-[#3c3d37]">HTML, CSS, JavaScript, React, Node.js</p>
           </div>
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h3>UI/UX Design</h3>
-            <p>Figma, Adobe XD, Wireframing</p>
+    
+          <div className="bg-[#f5f7f8] p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-[#522258]">DevOps</h3>
+            <p className="text-lg text-[#3c3d37]">Docker, Kubernaties, terraform, ansible, jenkins</p>
           </div>
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h3>Database</h3>
-            <p>MySQL, MongoDB</p>
+          <div className="bg-[#f5f7f8] p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-[#522258]">Version Control</h3>
+            <p className="text-lg text-[#3c3d37]">Git, GitHub</p>
           </div>
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h3>Version Control</h3>
-            <p>Git, GitHub</p>
+          <div className="bg-[#f5f7f8] p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-[#522258]">Cloud Services</h3>
+            <p className="text-lg text-[#3c3d37]">AWS,vpc, route53,ec2,</p>
           </div>
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h3>Cloud Services</h3>
-            <p>AWS, Azure</p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h3>Testing</h3>
-            <p>Jest, Cypress</p>
-          </div>
+          
         </div>
       </div>
     </section>
