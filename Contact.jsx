@@ -1,55 +1,58 @@
-import { motion } from "framer-motion";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import React from 'react';
 
-const Contact = () => {
+function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-900 text-white">
-      <div className="container mx-auto px-6 text-center">
-        <motion.h2
-          className="text-4xl sm:text-5xl font-bold mb-10"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Contact Me
-        </motion.h2>
-
-        <form className="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full p-3 mb-4 rounded bg-gray-700 text-white placeholder-gray-400 outline-none"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full p-3 mb-4 rounded bg-gray-700 text-white placeholder-gray-400 outline-none"
-          />
-          <textarea
-            rows="4"
-            placeholder="Your Message"
-            className="w-full p-3 mb-4 rounded bg-gray-700 text-white placeholder-gray-400 outline-none"
-          />
-          <button className="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded text-white font-bold">
-            Send Message
-          </button>
+    <section id="contact" className="bg-gray-900 text-white py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-6 text-center md:text-left">
+          Contact <span className="text-blue-500">Me</span>
+        </h2>
+        <form className="max-w-lg mx-auto">
+          <div className="mb-4">
+            <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="name">
+              Name
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              type="text"
+              placeholder="Your Name"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div className="mb-6">
+            <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="message"
+              rows="4"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <div className="flex items-center justify-between">
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Send
+            </button>
+          </div>
         </form>
-
-        {/* Social Links */}
-        <div className="mt-8 flex justify-center space-x-6 text-2xl">
-          <a href="mailto:your.email@example.com" className="text-blue-400 hover:text-blue-500">
-            <FaEnvelope />
-          </a>
-          <a href="https://www.linkedin.com/in/yourprofile" className="text-blue-400 hover:text-blue-500">
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/yourgithub" className="text-blue-400 hover:text-blue-500">
-            <FaGithub />
-          </a>
-        </div>
       </div>
     </section>
   );
-};
+}
 
 export default Contact;

@@ -1,40 +1,29 @@
-import { motion } from "framer-motion";
+import React from 'react';
 
-const About = () => {
+function About() {
   return (
-    <section id="about" className="py-20 bg-gray-800 text-white">
-      <div className="container mx-auto px-6 text-center">
-        <motion.h2
-          className="text-4xl sm:text-5xl font-bold mb-6"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          About Me
-        </motion.h2>
-
-        <motion.p
-          className="text-lg text-gray-300 max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
-          I'm a passionate Full Stack Developer specializing in React, Node.js, and modern web technologies. I build high-performance web applications with a focus on clean UI/UX.
-        </motion.p>
-
-        <motion.div
-          className="mt-6 flex justify-center space-x-6"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-        >
-          <span className="px-4 py-2 bg-blue-600 rounded-lg text-white">React</span>
-          <span className="px-4 py-2 bg-green-600 rounded-lg text-white">Node.js</span>
-          <span className="px-4 py-2 bg-yellow-500 rounded-lg text-white">JavaScript</span>
-        </motion.div>
+    <section id="about" className="bg-gray-800 text-white py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-6 text-center md:text-left">
+          About <span className="text-blue-500">Me</span>
+        </h2>
+        <div className="md:flex md:items-center">
+          <div className="md:w-1/2">
+            <h3 className="text-2xl mb-4">Full Stack Developer!</h3>
+            <p className="text-lg mb-8 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum, placeat nesciunt ea maiores, accusantium rem, vitae voluptas reprehenderit doloremque eum. Itaque, tempora. Atque, perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi illo ratione doloribus, nihil quisquam. Commodi alias magni, sed ipsam, voluptatum harum ea illum quidem saepe deserunt. Quod, architecto.
+            </p>
+            <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out">
+              Read More
+            </a>
+          </div>
+          <div className="md:w-1/2 mt-8 md:mt-0 md:pl-10">
+            {/* Add Image Here */}
+          </div>
+        </div>
       </div>
     </section>
   );
-};
+}
 
 export default About;
